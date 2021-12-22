@@ -1,2 +1,2 @@
 # Send email
-echo -e "Subject: Robot IP Address \n\n `ip address`" | sendmail 19084103d@connect.polyu.hk
+echo -e "Subject: Robot IP Address \n\n `ip address`" | /usr/sbin/sendmail robot.uris@gmail.com
