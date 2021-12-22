@@ -1,7 +1,2 @@
-# report the robot's ip address
-cd /home/bingda/repos/robot-operation
-ip address > network/ip.txt
-uuidgen | cat >> network/ip.txt
-git add network/ip.txt
-git commit -m "Update ip address (`date`)"
-git push
+# Send email
+echo -e "Subject: Robot IP Address \n\n `ip address`" | sendmail 19084103d@connect.polyu.hk
